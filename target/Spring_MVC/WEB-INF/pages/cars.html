@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All cars</title>
+</head>
+<body>
+<table>
+    <tr th:each="car : ${cars}">
+        <td th:text="${car.getModel()}">Model name</td>
+        <td th:text="${car.getSeries()}">Series</td>
+        <td th:text="${car.getYear()}">Year of production</td>
+    </tr>
+
+</table>
+</body>
+</html>
